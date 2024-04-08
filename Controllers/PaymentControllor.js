@@ -109,14 +109,14 @@ const PaymentVerfication =async (req,res)=>{
     //replace with domain name
     //can use handler instead of call back
     
-    res.redirect(`/payment/success/${IsSuc}/${razorpay_payment_id}`)
+    res.redirect(`https://meeindia-hosted-1.onrender.com/payment/success/${IsSuc}/${razorpay_payment_id}`)
   }else{
     IsSuc="no"
-    res.redirect(`/payment/success/${IsSuc}/${razorpay_payment_id}`)
+    res.redirect(`https://meeindia-hosted-1.onrender.com/payment/success/${IsSuc}/${razorpay_payment_id}`)
 
   }
   } catch (error) {
-    res.redirect(`/payment/success/no/${razorpay_payment_id}`)
+    res.redirect(`https://meeindia-hosted-1.onrender.com/payment/success/no/${razorpay_payment_id}`)
   }
   
 }
